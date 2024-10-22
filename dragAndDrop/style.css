@@ -168,12 +168,16 @@ table {
 /*item start*/
 .placeholder {
   width: 30%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .item {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5%;
+  padding: 10%;
   cursor: grab;
   border-radius: 20px;
   box-shadow: -2px 0px 22px rgba(2, 243, 215, 0.97);
@@ -190,6 +194,9 @@ table {
 }
 .hide {
   display: none;
+}
+.hovered {
+  border-top: 2px solid rgb(167, 93, 237);
 }
 /*item end*/
 
