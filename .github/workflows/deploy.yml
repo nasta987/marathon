@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - gh-pages # Это значит, что действие сработает при пуше в ветку gh-pages
+      - gh-pages
 
 jobs:
   deploy:
@@ -22,10 +22,16 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build # Это если твой проект требует сборки
+        run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy carousel to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build # Папка с финальными файлами для деплоя (может быть другая, в зависимости от твоей сборки)
+          publish_dir: ./carousel/build
+
+      - name: Deploy dragAndDrop to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dragAndDrop/build
