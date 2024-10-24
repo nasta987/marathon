@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Studio Pyatnitskaya</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/icons.png" />
@@ -23,16 +24,70 @@
     <header></header>
     <main>
       <div class="main-container">
-        <div class="row">
-          <div class="col-header start">Начать</div>
-          <div class="col-header progress">В процессе</div>
-          <div class="col-header done">Выполнено</div>
-        </div>
-        <div class="row">
-          <div class="placeholder">
-            <div class="item" draggable="true">Перетащи меня</div>
-            <div class="placeholder"></div>
-            <div class="placeholder"></div>
+        <div class="container">
+          <div class="sidebar">
+            <div
+              style="
+                background: linear-gradient(
+                  229.99deg,
+                  #f3f3ef -8%,
+                  #333333 138%
+                );
+              "
+            >
+              <h1>Стрижки</h1>
+              <p>Стрижки, укладка</p>
+            </div>
+            <div
+              style="
+                background: linear-gradient(
+                  215.32deg,
+                  #b0d7be -1%,
+                  #3b633c 124%
+                );
+              "
+            >
+              <h1>Ресницы</h1>
+              <p>Ресницы 3D, 5D, лисьи глазки</p>
+            </div>
+            <div
+              style="
+                background: linear-gradient(
+                  221.87deg,
+                  #f7f5d6 1%,
+                  #dccf1d 128%
+                );
+              "
+            >
+              <h1>Маникюр и педикюр</h1>
+              <p>Маникюр, педикюр, медицинский педикюр</p>
+            </div>
+            <div
+              style="
+                background: linear-gradient(
+                  220.16deg,
+                  #f1e0c3 -26%,
+                  #8a6903 145%
+                );
+              "
+            >
+              <h1>Перманентный макияж</h1>
+              <p>Брови, губы, межресничный макияж, стрелки</p>
+            </div>
+          </div>
+          <div class="main-slide">
+            <div style="background-image: url('assets/permanent.jpg')"></div>
+            <div style="background-image: url('assets/manicure.jpg')"></div>
+            <div style="background-image: url('assets/eyelashes.jpg')"></div>
+            <div style="background-image: url('assets/haircut.jpg')"></div>
+          </div>
+          <div class="controls">
+            <button class="down-button">
+              <i class="fas fa-arrow-down"></i>
+            </button>
+            <button class="up-button">
+              <i class="fas fa-arrow-up"></i>
+            </button>
           </div>
         </div>
       </div>
